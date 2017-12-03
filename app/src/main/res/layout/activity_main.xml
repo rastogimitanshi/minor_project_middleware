@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:id="@+id/name"
+        android:padding="10dp"
+        android:textColor="#A11"
+        />
+
+    <Button
+        android:id="@+id/btnextract"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF1744"
+        android:text="FOLLOWING IS THE EXTRACTED CONTENT"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="16dp" />
+
+        <ListView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:textSize="14dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFEBEE">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#A11"
+                android:text="TAKE ACTION"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="15dp"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#A11"
+                android:text="LOGOUT"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>
