@@ -1,6 +1,7 @@
 package com.example.sl.mypro;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -17,6 +18,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import java.util.ArrayList;
+import java.lang.Object;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -47,7 +49,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "Sending content to 3rd party app...", Toast.LENGTH_LONG).show();
+                Uri gmmIntentUri = Uri.parse("geo:0,0?q=Indira Gandhi Delhi Technical University for Women, kashmere Gate, Delhi");
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                startActivity(mapIntent);
+
             }
+
         });
 
         logout.setOnClickListener(new View.OnClickListener() {
